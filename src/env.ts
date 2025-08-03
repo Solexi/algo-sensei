@@ -7,6 +7,7 @@ export const envSchema = z.object({
 	DEBUG: z.string().default("false"),
 	GOOGLE_API_KEY: z.string(),
 	LLM_MODEL: z.string().default("gemini-2.5-flash"),
+	LEETCODE_GRAPHQL_API_URL: z.string(),
 });
 
 export const env = envSchema.parse(process.env);
